@@ -12,7 +12,7 @@ alias pushconfig='brew list > ~/homebrew-packages/packages && \
 code --list-extensions > ~/VSCode/extensions && \
 config add ~/homebrew-packages && \
 config add ~/VSCode && \
-config commit -am "backup on system start: $(DATE)" && \
+config commit -am "backup via pushconfig: $(DATE)" && \
 config push' 
 
 # NVM init moved to zsh plugin 
