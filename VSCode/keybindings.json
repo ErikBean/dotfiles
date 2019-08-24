@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaults
+[
+  { 
+    "key": "cmd+shift+D",
+    "command": "docthis.documentThis",
+    "when": "editorTextFocus" 
+  },
+  { 
+    "key": "cmd+shift+L",
+    "command": "turboConsoleLog.displayLogMessage",
+    "when": "editorTextFocus && editorHasSelection" 
+  },
+  {
+    "key": "cmd+up",
+    "command": "expand_region",
+    "when": "editorTextFocus"
+  },
+  {
+      "key": "cmd+down",
+      "command": "undo_expand_region",
+      "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+left",
+    "command": "cursorWordPartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+      "key": "alt+right",
+      "command": "cursorWordPartRight",
+      "when": "editorTextFocus"
+  },
+]

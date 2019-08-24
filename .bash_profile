@@ -8,6 +8,7 @@ alias stats=git-quick-stats
 alias afk='pipes.sh -r 10000 -R -p 3'
 alias grh 'git reset --hard'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # NVM init moved to zsh plugin 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
