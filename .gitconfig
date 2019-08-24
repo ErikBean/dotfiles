@@ -1,0 +1,36 @@
+[user]
+	email = erik.bean@nike.com
+	name = Erik Bean
+[core]
+	excludesfile = /Users/ebean2/.gitignore_global
+	ignorecase = false
+	hooksPath = /Users/ebean2/.git_hooks
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+	co = checkout
+	amend = commit --amend -C HEAD
+	hard = reset --hard
+[push]
+	default = current
+[commit]
+	template = /Users/ebean2/.stCommitMsg
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
