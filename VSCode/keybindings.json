@@ -30,4 +30,19 @@
       "command": "cursorWordPartRight",
       "when": "editorTextFocus"
   },
+  { 
+    "key": "cmd+shift+C",       
+    "command": "copyRelativeFilePath",
+    "when": "editorTextFocus" 
+  },
+  { 
+    "key": "cmd+backspace",            
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly" 
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Run tests"
+  },
 ]

@@ -10,6 +10,7 @@
 	co = checkout
 	amend = commit --amend -C HEAD
 	hard = reset --hard
+	unmerged = branch --no-merged master
 [push]
 	default = current
 [commit]

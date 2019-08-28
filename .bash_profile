@@ -12,6 +12,12 @@ alias pushconfig='brew list > ~/homebrew-packages/packages && \
 code --list-extensions > ~/VSCode/extensions && \
 config add ~/homebrew-packages && \
 config add ~/VSCode && \
+config add ~/.zshrc
+config add ~/.p10k.zsh
+config add ~/.gitconfig
+config add ~/.bash_profile
+config add ~/.vimrc
+config add ~/.warprc
 config commit -am "backup via pushconfig: $(DATE)" && \
 config push' 
 
