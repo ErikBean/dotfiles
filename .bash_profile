@@ -19,8 +19,10 @@ config add ~/.bash_profile
 config add ~/.vimrc
 config add ~/.warprc
 config commit -am "backup via pushconfig: $(DATE)" && \
-config push' 
+config push'
 
+alias up='docker-compose up'
+alias dd='docker-compose down -v'
 # NVM init moved to zsh plugin 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm

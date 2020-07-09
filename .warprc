@@ -6,3 +6,10 @@ pitch:~/Code/Pitch
 checkout:~/Code/checkout
 code:~/Code
 plugins:~/.oh-my-zsh/custom/plugins
+Pics:~/Pictures
+loc-fetcher:~/Code/loc-fetcher
+bodacious:~/Code/bodacious
+pet:~/Code/premium-experience-toolkit
+react-hooks:~/Code/react-hooks-example
+stories:~/Code/stories-ux
+foo:~/Code/stories-ux

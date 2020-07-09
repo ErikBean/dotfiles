@@ -1,12 +1,16 @@
 # Path to your oh-my-zsh configuration.
 source ~/.bash_profile
 ZSH=$HOME/.oh-my-zsh
-
+DISABLE_MAGIC_FUNCTIONS=true
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -34,27 +38,27 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor regexp)
 
 plugins=(
   hacker-quotes
-  git-extra-commands
   thefuck
-  forgit
   history-substring-search
+  zsh-autosuggestions
   zsh-completions
   zsh-aliases-exa
   autoupdate
   wd
-  nvm
-  fast-syntax-highlighting
+  # nvm
+  # fast-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # source /Users/ebean2/Code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Put this in iTerm profile: 
 # cd ~/Code/gru
+export NVM_DIR=~/.nvm
+source /usr/local/opt/nvm/nvm.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

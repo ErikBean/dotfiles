@@ -16,11 +16,13 @@ jq
 keystone
 kubernetes-cli
 lua
+ncurses
 node
 nvm
 oniguruma
 openssl
 openssl@1.1
+pcre
 pcre2
 peco
 pipes-sh
@@ -32,4 +34,5 @@ sqlite
 thefuck
 xz
 yarn
+zsh
 zsh-syntax-highlighting
